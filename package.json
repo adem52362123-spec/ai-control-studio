@@ -1,0 +1,27 @@
+{
+  "name": "ai-control-studio",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "api:dev": "cd apps/api && npm run dev",
+    "web:dev": "cd apps/web && npm run dev",
+    "db:migrate": "cd apps/api && npx prisma migrate dev",
+    "db:generate": "cd apps/api && npx prisma generate",
+    "db:studio": "cd apps/api && npx prisma studio",
+    "setup": "npm install && cd apps/api && npx prisma generate && npx prisma migrate dev --name init"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  },
+  "dependencies": {
+    "lightningcss-win32-x64-msvc": "^1.32.0"
+  }
+}
