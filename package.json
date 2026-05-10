@@ -21,7 +21,5 @@
     "turbo": "^2.5.0",
     "typescript": "^5.8.0"
   },
-  "dependencies": {
-    "lightningcss-win32-x64-msvc": "^1.32.0"
-  }
+  "dependencies": {}
 }
