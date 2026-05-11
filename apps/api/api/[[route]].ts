@@ -1,5 +1,5 @@
 import { handle } from "hono/vercel"
-import { app } from "../dist/app"
+import { app } from "../src/app"
 
 export const runtime = "nodejs22.x"
 export const GET = handle(app)
