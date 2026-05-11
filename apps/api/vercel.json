@@ -1,5 +1,4 @@
 {
   "installCommand": "cd ../.. && npm install",
-  "buildCommand": "cd ../.. && npx turbo build --filter=@ai-control/api...",
-  "outputDirectory": "."
+  "buildCommand": "cd ../.. && npx turbo build --filter=@ai-control/api..."
 }
